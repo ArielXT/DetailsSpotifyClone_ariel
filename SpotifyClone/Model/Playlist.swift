@@ -1,3 +1,5 @@
+
+
 import Foundation
 
 // MARK: - PlayList
@@ -72,6 +74,7 @@ struct Tracks: Codable {
 }
 
 // MARK: - Encode/decode helpers
+
 class JSONNull: Codable, Hashable {
 
     public static func == (lhs: JSONNull, rhs: JSONNull) -> Bool {

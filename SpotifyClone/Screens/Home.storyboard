@@ -91,10 +91,10 @@
         <!--PlaylistDetail-->
         <scene sceneID="E5m-m6-CA2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bnc-Fx-lF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="PlaylistDetail" id="7oZ-t6-npF" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="FYY-ei-sJc"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnc-Fx-lF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1875.3846153846152" y="680.33175355450237"/>
         </scene>

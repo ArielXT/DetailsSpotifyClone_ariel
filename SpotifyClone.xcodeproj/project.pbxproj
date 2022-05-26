@@ -20,6 +20,8 @@
 		AA20923B282A32B100107D58 /* PlayListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA20923A282A32B100107D58 /* PlayListViewModel.swift */; };
 		AA209241282ADB7800107D58 /* Spotify+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA209240282ADB7800107D58 /* Spotify+Image.swift */; };
 		AA209243282ADD6900107D58 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA209242282ADD6900107D58 /* LibraryViewController.swift */; };
+		AA4C52F228400B48002B9DB6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = AA4C52F128400B48002B9DB6 /* SDWebImage */; };
+		AA4C52F428400B48002B9DB6 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA4C52F328400B48002B9DB6 /* SDWebImageMapKit */; };
 		BB0D01FF283DB80C00EC25DC /* PlayListDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D01FE283DB80B00EC25DC /* PlayListDetail.swift */; };
 		BB0D0201283DB8AB00EC25DC /* PlatlistDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D0200283DB8AB00EC25DC /* PlatlistDetailViewModel.swift */; };
 		BB0D0205283DD97F00EC25DC /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D0204283DD97F00EC25DC /* GradientView.swift */; };
@@ -78,7 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA4C52F228400B48002B9DB6 /* SDWebImage in Frameworks */,
 				BBF78E12283E05BE00F52B41 /* SDWebImageMapKit in Frameworks */,
+				AA4C52F428400B48002B9DB6 /* SDWebImageMapKit in Frameworks */,
 				BBF78E10283E05BE00F52B41 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +224,8 @@
 			packageProductDependencies = (
 				BBF78E0F283E05BE00F52B41 /* SDWebImage */,
 				BBF78E11283E05BE00F52B41 /* SDWebImageMapKit */,
+				AA4C52F128400B48002B9DB6 /* SDWebImage */,
+				AA4C52F328400B48002B9DB6 /* SDWebImageMapKit */,
 			);
 			productName = SpotifyClone;
 			productReference = AA2091F8282A06F900107D58 /* SpotifyClone.app */;
@@ -295,6 +301,7 @@
 			mainGroup = AA2091EF282A06F900107D58;
 			packageReferences = (
 				BBF78E0E283E05BE00F52B41 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				AA4C52F028400B48002B9DB6 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = AA2091F9282A06F900107D58 /* Products */;
 			projectDirPath = "";
@@ -689,6 +696,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AA4C52F028400B48002B9DB6 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		BBF78E0E283E05BE00F52B41 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -700,6 +715,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AA4C52F128400B48002B9DB6 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBF78E0E283E05BE00F52B41 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		AA4C52F328400B48002B9DB6 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BBF78E0E283E05BE00F52B41 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
 		BBF78E0F283E05BE00F52B41 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BBF78E0E283E05BE00F52B41 /* XCRemoteSwiftPackageReference "SDWebImage" */;
