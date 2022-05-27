@@ -62,7 +62,7 @@ extension LibraryViewController: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell")!
             let playList = playListViewModel.playList?.items[indexPath.section]
             cell.textLabel?.text = playList?.name
-            cell.detailTextLabel?.text = playList?.itemDescription
+            cell.detailTextLabel?.text = playList?.description
             
             cell.imageView?.image = playList?.images.count ?? 0 > 0
             ? HelperImage.setImageFromUrl(url: playList?.images[0].url ?? "")
