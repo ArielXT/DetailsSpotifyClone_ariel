@@ -57,6 +57,7 @@
                                     <color key="baseBackgroundColor" name="PrimaryColor"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="onTappedLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jes-Xf-Mzf"/>
                                     <segue destination="f2h-Hv-BHL" kind="presentation" modalPresentationStyle="fullScreen" id="XFV-K4-Pna"/>
                                 </connections>
                             </button>
@@ -80,6 +81,10 @@
                             <constraint firstItem="9Jx-mI-rOl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zyp-ll-TKf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textFieldEmail" destination="qz4-f9-ZQw" id="B5G-iU-2PG"/>
+                        <outlet property="textFieldPassword" destination="4dC-HB-f4U" id="gSc-lB-ozF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
