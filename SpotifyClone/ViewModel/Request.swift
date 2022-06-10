@@ -8,7 +8,7 @@
 import Foundation
 
 class Request{
-    let token = "BQC6FSAq6Fq8jbjfQWedb3xGhQ0JD_1yeLu3G9X_8fStp2mlZaOwNVMEnEnvE0ogcQZnUD8lJ4fug98MDCP1yOY1wVWQ2PsLrvd7nUXbkajUyDmzAAr9iJIz5yTD7NFKhh4xWPLiagxwySgOf9DV_L9ai_76Ze0TUf64O6blTOfl_ccZfLBaOQ&refresh_token=AQC8n8o5p2O6Sq2TdilbSltxeAjBf3w14qkOajxVv09Vcfqjr7DxtuXcyGeLwBi_TOomt0uKEc94mifWo6z8L5OITAuCmDAjIG1h4yV9jAyyn3RQtlE1YzT6J0yb_5LazQg"
+    let token = "BQAj-eDe4ev_i3dgdw57m5_QvU3AWG5C_wzEWN6oZtgg0ikQI2t4ID3x7Q7EBQ8r38jgnHwNpiwbclKAXlmlv6PkiwrJBStQCcXD_CdlGylmYjj3kqP_oRDHFAsJw0HkdLxejVXWkxmDyxTxIDpU7_oey_X46RCw8a6Q2tqZAhdYgANm0vt_Kae3bV8_pFtHAAkG_bNd3nRFwfFq8_SzQ54&refresh_token=AQBNTBO7j9qIpQBbX1VVw4w8e6tC-JLVD7HOD-404jCQX7ifINUu8kmFSWcjQjhoj2vdiG40vPuRzBFcoVkhLnYzmLwr7jZv2DcUhdh24T4GFu8apGf6ZDeoKpqx7VJ4YNc"
     
     
     let BASE_URL = "https://api.spotify.com/v1/"
@@ -17,7 +17,8 @@ class Request{
     // en este caso estamos diciendo que nuestra funcion retorna un Data o nil
     func getDataFromAPI(url: String) async -> Data? {
         do {
-            var request = URLRequest(url: HelperString.getURLFromString(url: "\(BASE_URL)\(url)")!)
+            let urlParse = url.replacingOccurrences(of: " ", with: "%20")
+            var request = URLRequest(url: HelperString.getURLFromString(url: "\(BASE_URL)\(urlParse)")!)            
             request.httpMethod = "GET"
             request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
             

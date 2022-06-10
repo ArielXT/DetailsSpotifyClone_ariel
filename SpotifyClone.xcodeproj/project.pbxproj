@@ -25,6 +25,10 @@
 		AA4760512842652500C8ECF2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AA4760502842652500C8ECF2 /* FirebaseDatabase */; };
 		AA4760532842652500C8ECF2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AA4760522842652500C8ECF2 /* FirebaseFirestore */; };
 		AA4760552842652500C8ECF2 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AA4760542842652500C8ECF2 /* FirebaseStorage */; };
+		AA476057284AB48E00C8ECF2 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA476056284AB48E00C8ECF2 /* Search.swift */; };
+		AA476059284AD81900C8ECF2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA476058284AD81900C8ECF2 /* HomeViewController.swift */; };
+		AA47605B284ADCA200C8ECF2 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47605A284ADCA200C8ECF2 /* SearchViewModel.swift */; };
+		AA47605D284AEF7600C8ECF2 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47605C284AEF7600C8ECF2 /* SearchTableViewCell.swift */; };
 		AA4C52F228400B48002B9DB6 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = AA4C52F128400B48002B9DB6 /* SDWebImage */; };
 		AA4C52F428400B48002B9DB6 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA4C52F328400B48002B9DB6 /* SDWebImageMapKit */; };
 		BB0D01FF283DB80C00EC25DC /* PlayListDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D01FE283DB80B00EC25DC /* PlayListDetail.swift */; };
@@ -73,6 +77,10 @@
 		AA209240282ADB7800107D58 /* Spotify+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Spotify+Image.swift"; sourceTree = "<group>"; };
 		AA209242282ADD6900107D58 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		AA47604B2842623300C8ECF2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AA476056284AB48E00C8ECF2 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		AA476058284AD81900C8ECF2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AA47605A284ADCA200C8ECF2 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		AA47605C284AEF7600C8ECF2 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		BB0D01FE283DB80B00EC25DC /* PlayListDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListDetail.swift; sourceTree = "<group>"; };
 		BB0D0200283DB8AB00EC25DC /* PlatlistDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatlistDetailViewModel.swift; sourceTree = "<group>"; };
 		BB0D0204283DD97F00EC25DC /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -157,6 +165,7 @@
 				AA2091FF282A06F900107D58 /* ViewController.swift */,
 				AA209242282ADD6900107D58 /* LibraryViewController.swift */,
 				BB0D0206283DEB5300EC25DC /* PlaylistDetailViewController.swift */,
+				AA476058284AD81900C8ECF2 /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -167,6 +176,7 @@
 				AA209234282A2BE400107D58 /* Request.swift */,
 				AA20923A282A32B100107D58 /* PlayListViewModel.swift */,
 				BB0D0200283DB8AB00EC25DC /* PlatlistDetailViewModel.swift */,
+				AA47605A284ADCA200C8ECF2 /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -176,6 +186,7 @@
 			children = (
 				AA209238282A30C100107D58 /* Playlist.swift */,
 				BB0D01FE283DB80B00EC25DC /* PlayListDetail.swift */,
+				AA476056284AB48E00C8ECF2 /* Search.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				BBF78E0C283E019400F52B41 /* ItemPlaylistDetailTableViewCell.swift */,
+				AA47605C284AEF7600C8ECF2 /* SearchTableViewCell.swift */,
 			);
 			path = ViewCell;
 			sourceTree = "<group>";
@@ -374,9 +386,13 @@
 				AA209235282A2BE400107D58 /* Request.swift in Sources */,
 				BB0D0201283DB8AB00EC25DC /* PlatlistDetailViewModel.swift in Sources */,
 				AA2091FC282A06F900107D58 /* AppDelegate.swift in Sources */,
+				AA47605D284AEF7600C8ECF2 /* SearchTableViewCell.swift in Sources */,
 				BB0D0207283DEB5300EC25DC /* PlaylistDetailViewController.swift in Sources */,
 				AA2091FE282A06F900107D58 /* SceneDelegate.swift in Sources */,
+				AA476059284AD81900C8ECF2 /* HomeViewController.swift in Sources */,
 				AA209243282ADD6900107D58 /* LibraryViewController.swift in Sources */,
+				AA476057284AB48E00C8ECF2 /* Search.swift in Sources */,
+				AA47605B284ADCA200C8ECF2 /* SearchViewModel.swift in Sources */,
 				BB0D01FF283DB80C00EC25DC /* PlayListDetail.swift in Sources */,
 				AA209239282A30C100107D58 /* Playlist.swift in Sources */,
 			);
